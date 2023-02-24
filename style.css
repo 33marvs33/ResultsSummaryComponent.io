@@ -220,6 +220,10 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 1.8em;
+        line-height: .7;
+    }
+    .circle .percent {
+        font-size: 4rem;
     }
     .left-col h2 {
         font-weight: var(--fw-medium);
