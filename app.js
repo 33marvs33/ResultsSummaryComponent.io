@@ -42,3 +42,16 @@ data.forEach((key, index) => {
             </li>
   `;
 });
+// adding some effects using setinterval//
+const percent = document.querySelector('.percent');
+window.addEventListener('animationend', () => {
+let percentScore = 0;
+const myInterval = setInterval(scorePercent,30)
+function scorePercent() {
+   percentScore++
+   if(percentScore == 76) {
+    clearInterval(myInterval)
+   }
+   percent.innerText = percentScore
+}
+})
